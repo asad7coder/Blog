@@ -1,0 +1,15 @@
+.logo{
+
+}
+.b_name {
+  font-size: 18px;
+  margin-left: 10px;
+}
+.logo_img {
+  width: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.verified_tick {
+  width: 45px;
+}

@@ -1,13 +1,27 @@
 import React from "react";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
+          {/* <a className="navbar-brand" href="#">
+            Asad7Coder
+          </a> */}
+          {/*  */}
+          <a class="navbar-brand" href="#hero">
+            <div class="logo">
+              <img src='https://asad7coder.github.io/portfolio-bootstrap/imgs/logo.jpg' alt="logo" class={styles.logo_img} />
+              <span class={styles.b_name}>Muhammad Asad</span>
+              <img
+                src="https://asad7coder.github.io/portfolio-bootstrap/imgs/verified-tick.png"
+                alt="verified-tick"
+                class={styles.verified_tick}
+              />
+            </div>
           </a>
+          {/*  */}
           <button
             className="navbar-toggler"
             type="button"

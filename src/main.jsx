@@ -11,6 +11,8 @@ import Component from "./components/BlogPages/React/Component.jsx";
 import DGarid from "./components/BlogPages/Css/DGarid.jsx";
 import Transform from "./components/BlogPages/Css/Transform.jsx";
 import Animation from "./components/BlogPages/Css/Animation.jsx";
+import ContextProvider from "./ContextApi/StoreData/StoreData.jsx";
+import JavaScript from "./components/BlogPages/JavaScript/JavaScript.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,11 +35,17 @@ const router = createBrowserRouter([
         path: "animation",
         element: <Animation />,
       },
+      {
+        path: "jsRagular",
+        element:<JavaScript/>
+      },
     ],
   },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <ContextProvider>
     <RouterProvider router={router} />
+    </ContextProvider>
   </StrictMode>
 );
